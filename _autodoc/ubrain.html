@@ -1,0 +1,769 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ubrain package &mdash; ubrain 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="ubrain 1.0 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ubrain
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ubrain package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-ubrain.connection">ubrain.connection module</a></li>
+<li><a class="reference internal" href="#module-ubrain.layer">ubrain.layer module</a></li>
+<li><a class="reference internal" href="#module-ubrain.neuralnetwork">ubrain.neuralnetwork module</a></li>
+<li><a class="reference internal" href="#module-ubrain.neuron">ubrain.neuron module</a></li>
+<li><a class="reference internal" href="#module-ubrain.weight">ubrain.weight module</a></li>
+<li><a class="reference internal" href="#module-ubrain">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">ubrain</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>ubrain package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_autodoc/ubrain.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ubrain-package">
+<h1>ubrain package<a class="headerlink" href="#ubrain-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ubrain.exceptions.html">ubrain.exceptions package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.exceptions.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.exceptions.html#module-ubrain.exceptions.ubrainerror">ubrain.exceptions.ubrainerror module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.exceptions.html#module-ubrain.exceptions">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ubrain.input.html">ubrain.input package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.input.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.input.html#module-ubrain.input.inputfunc">ubrain.input.inputfunc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.input.html#module-ubrain.input.sum">ubrain.input.sum module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.input.html#module-ubrain.input.weightedsum">ubrain.input.weightedsum module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.input.html#module-ubrain.input">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ubrain.trans.html">ubrain.trans package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.trans.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.trans.html#module-ubrain.trans.sigmoid">ubrain.trans.sigmoid module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.trans.html#module-ubrain.trans.step">ubrain.trans.step module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.trans.html#module-ubrain.trans.transferfunc">ubrain.trans.transferfunc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.trans.html#module-ubrain.trans">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ubrain.util.html">ubrain.util package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.util.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.util.html#module-ubrain.util.layerbuilder">ubrain.util.layerbuilder module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.util.html#module-ubrain.util.neuralnetworkbuilder">ubrain.util.neuralnetworkbuilder module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ubrain.util.html#module-ubrain.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ubrain.connection">
+<span id="ubrain-connection-module"></span><h2>ubrain.connection module<a class="headerlink" href="#module-ubrain.connection" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ubrain.connection.Connection">
+<em class="property">class </em><code class="descclassname">ubrain.connection.</code><code class="descname">Connection</code><span class="sig-paren">(</span><em>src</em>, <em>dest</em>, <em>weight=&lt;ubrain.weight.Weight object at 0x04A69790&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.connection.Connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Weighted connection between two neurons. Once it has been created, you can modify the weight associated but not
+the source of destination. However, you can enable/disable the connection or create a new one.</p>
+<dl class="method">
+<dt id="ubrain.connection.Connection.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>src</em>, <em>dest</em>, <em>weight=&lt;ubrain.weight.Weight object at 0x04A69790&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.connection.Connection.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an instance of a new connection between two neurons with the specified weight.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>src</strong> (<a class="reference internal" href="#ubrain.neuron.Neuron" title="ubrain.neuron.Neuron"><em>ubrain.neuron.Neuron</em></a>) &#8211; The source neuron for this connection.</li>
+<li><strong>dest</strong> (<a class="reference internal" href="#ubrain.neuron.Neuron" title="ubrain.neuron.Neuron"><em>ubrain.neuron.Neuron</em></a>) &#8211; The destination neuron for this connection.</li>
+<li><strong>weight</strong> (<a class="reference internal" href="#ubrain.weight.Weight" title="ubrain.weight.Weight"><em>ubrain.weight.Weight</em></a>) &#8211; The weight associated to this connection.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When a connection is created, it is associated to each neuron.</p>
+</div>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="o">...</span>
+ <span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="n">Neuron</span><span class="p">()</span>
+ <span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">Neuron</span><span class="p">()</span>
+ <span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">output_conn</span> <span class="c1"># {}</span>
+ <span class="o">&gt;&gt;&gt;</span> <span class="n">b</span><span class="o">.</span><span class="n">input_conn</span> <span class="c1"># {}</span>
+ <span class="o">&gt;&gt;&gt;</span> <span class="n">c</span> <span class="o">=</span> <span class="n">Connection</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># &lt;__main__.Connection object at 0x00F50F10&gt;</span>
+ <span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">output_conn</span> <span class="c1"># {&lt;__main__.Connection object at 0x00F50F10&gt;}</span>
+ <span class="o">&gt;&gt;&gt;</span> <span class="n">b</span><span class="o">.</span><span class="n">input_conn</span> <span class="c1"># {&lt;__main__.Connection object at 0x00F50F10&gt;}</span>
+</pre></div>
+</td></tr></table></div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.connection.Connection.dest">
+<code class="descname">dest</code><a class="headerlink" href="#ubrain.connection.Connection.dest" title="Permalink to this definition">¶</a></dt>
+<dd><p>The destination neuron from this connection.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Return the destination neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#ubrain.neuron.Neuron" title="ubrain.neuron.Neuron">ubrain.neuron.Neuron</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.connection.Connection.enabled">
+<code class="descname">enabled</code><a class="headerlink" href="#ubrain.connection.Connection.enabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.connection.Connection.src">
+<code class="descname">src</code><a class="headerlink" href="#ubrain.connection.Connection.src" title="Permalink to this definition">¶</a></dt>
+<dd><p>The source neuron from this connection.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the source neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#ubrain.neuron.Neuron" title="ubrain.neuron.Neuron">ubrain.neuron.Neuron</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.connection.Connection.weight">
+<code class="descname">weight</code><a class="headerlink" href="#ubrain.connection.Connection.weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The weight associated to this connection.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the weight for this connection.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Setter:</th><td class="field-body">Sets the weight for this connection.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">ubrain.weight.Weight</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ubrain.layer">
+<span id="ubrain-layer-module"></span><h2>ubrain.layer module<a class="headerlink" href="#module-ubrain.layer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ubrain.layer.Layer">
+<em class="property">class </em><code class="descclassname">ubrain.layer.</code><code class="descname">Layer</code><span class="sig-paren">(</span><em>label=''</em>, <em>neurons=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.layer.Layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Layer of neurons in a neural network.</p>
+<dl class="method">
+<dt id="ubrain.layer.Layer.__getitem__">
+<code class="descname">__getitem__</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.layer.Layer.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the neuron at the specified position in this layer.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Setter:</th><td class="field-body">Sets the neuron at the specified position in this layer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">ubrain.neuron.Neuron</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ubrain.layer.Layer.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>label=''</em>, <em>neurons=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.layer.Layer.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an instance of a layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> (<em>str</em>) &#8211; The label for this layer. Default: &#8220;&#8221;.</li>
+<li><strong>neurons</strong> (<em>[ubrain.neuron.Neuron]</em>) &#8211; List of neurons for this layer. Default: [].</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ubrain.layer.Layer.__len__">
+<code class="descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.layer.Layer.__len__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns number of neurons in this layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ubrain.layer.Layer.append">
+<code class="descname">append</code><span class="sig-paren">(</span><em>neuron</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.layer.Layer.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a neuron at the end of this layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>neuron</strong> (<a class="reference internal" href="#ubrain.neuron.Neuron" title="ubrain.neuron.Neuron"><em>ubrain.neuron.Neuron</em></a>) &#8211; The new neuron to add.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ubrain.layer.Layer.calculate">
+<code class="descname">calculate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.layer.Layer.calculate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ubrain.layer.Layer.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>index</em>, <em>neuron</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.layer.Layer.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a neuron at the specified position in this layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> (<em>int</em>) &#8211; Index of the neuron before witch to insert.</li>
+<li><strong>neuron</strong> (<a class="reference internal" href="#ubrain.neuron.Neuron" title="ubrain.neuron.Neuron"><em>ubrain.neuron.Neuron</em></a>) &#8211; The new neuron to insert.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.layer.Layer.label">
+<code class="descname">label</code><a class="headerlink" href="#ubrain.layer.Layer.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>The label for this layer. A label is used to identify layers on a form-to provide a description.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the label for this layer.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Setter:</th><td class="field-body">Sets the label for this layer.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ubrain.layer.Layer.pop">
+<code class="descname">pop</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.layer.Layer.pop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes neuron at the specified position in this layer and returns it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> &#8211; Index of the neuron to remove.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The removed neuron.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#ubrain.neuron.Neuron" title="ubrain.neuron.Neuron">ubrain.neuron.Neuron</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ubrain.neuralnetwork">
+<span id="ubrain-neuralnetwork-module"></span><h2>ubrain.neuralnetwork module<a class="headerlink" href="#module-ubrain.neuralnetwork" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ubrain.neuralnetwork.NeuralNetwork">
+<em class="property">class </em><code class="descclassname">ubrain.neuralnetwork.</code><code class="descname">NeuralNetwork</code><span class="sig-paren">(</span><em>conf_str</em>, <em>encoding</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.neuralnetwork.NeuralNetwork" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="ubrain.neuralnetwork.NeuralNetwork.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>conf_str</em>, <em>encoding</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.neuralnetwork.NeuralNetwork.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ubrain.neuralnetwork.NeuralNetwork.append_layer">
+<code class="descname">append_layer</code><span class="sig-paren">(</span><em>layer</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.neuralnetwork.NeuralNetwork.append_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a layer at the end of this network.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>layer</strong> &#8211; The new layer to add.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ubrain.neuralnetwork.NeuralNetwork.insert_layer">
+<code class="descname">insert_layer</code><span class="sig-paren">(</span><em>index</em>, <em>layer</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.neuralnetwork.NeuralNetwork.insert_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a layer at the specified position in this network.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> &#8211; Index of the layer before witch to insert.</li>
+<li><strong>layer</strong> &#8211; The new layer to insert.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ubrain.neuralnetwork.NeuralNetwork.pop_layer">
+<code class="descname">pop_layer</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.neuralnetwork.NeuralNetwork.pop_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes layer at the specified position in this network and returns it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> &#8211; Index of the layer to remove.</td>
+</tr>
+</tbody>
+</table>
+<p>:return The removed layer.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ubrain.neuron">
+<span id="ubrain-neuron-module"></span><h2>ubrain.neuron module<a class="headerlink" href="#module-ubrain.neuron" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ubrain.neuron.Neuron">
+<em class="property">class </em><code class="descclassname">ubrain.neuron.</code><code class="descname">Neuron</code><span class="sig-paren">(</span><em>label=''</em>, <em>error=0.0</em>, <em>bias=&lt;ubrain.weight.Weight object at 0x04A69CD0&gt;</em>, <em>input_func=&lt;ubrain.input.weightedsum.WeightedSum object at 0x04A69CF0&gt;</em>, <em>transfer_func=&lt;ubrain.trans.step.Step object at 0x04A69D30&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.neuron.Neuron" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Basic unit in an artificial neural network. This model uses the McCulloch-Pitts (MCP) representation. The neuron
+can receive one or more inputs (dendrites) and produce an output (axon) using a function (InputFunc). This value is
+passed to a non-linear function (TransferFunc) inspired to build logic gates.</p>
+<dl class="method">
+<dt id="ubrain.neuron.Neuron.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>label=''</em>, <em>error=0.0</em>, <em>bias=&lt;ubrain.weight.Weight object at 0x04A69CD0&gt;</em>, <em>input_func=&lt;ubrain.input.weightedsum.WeightedSum object at 0x04A69CF0&gt;</em>, <em>transfer_func=&lt;ubrain.trans.step.Step object at 0x04A69D30&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.neuron.Neuron.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an instance of a artificial neuron.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>label</strong> (<em>str</em>) &#8211; The label for this neuron. Default: &#8220;&#8221;.</li>
+<li><strong>error</strong> (<em>float</em>) &#8211; The error for this neuron. Default: 0.0.</li>
+<li><strong>bias</strong> (<a class="reference internal" href="#ubrain.weight.Weight" title="ubrain.weight.Weight"><em>ubrain.weight.Weight</em></a>) &#8211; The bias for this neuron. Default weight: 0.0.</li>
+<li><strong>input_func</strong> (<a class="reference internal" href="ubrain.input.html#ubrain.input.inputfunc.InputFunc" title="ubrain.input.inputfunc.InputFunc"><em>ubrain.input.inputfunc.InputFunc</em></a>) &#8211; The input function for this neuron. Default:         ubrain.input.weightedsum.WeightedSum.</li>
+<li><strong>transfer_func</strong> (<a class="reference internal" href="ubrain.trans.html#ubrain.trans.transferfunc.TransferFunc" title="ubrain.trans.transferfunc.TransferFunc"><em>ubrain.trans.transferfunc.TransferFunc</em></a>) &#8211; The transfer function for this neuron. Default:         ubrain.trans.step.Step.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.neuron.Neuron.bias">
+<code class="descname">bias</code><a class="headerlink" href="#ubrain.neuron.Neuron.bias" title="Permalink to this definition">¶</a></dt>
+<dd><p>The bias for this neuron. A bias node provides flexibility to a neural network model as it allows you to
+change the input function, which can be critical to successful learning.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the bias for this neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Setter:</th><td class="field-body">Sets the bias for this neuron.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">ubrain.weight.Weight</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ubrain.neuron.Neuron.calculate">
+<code class="descname">calculate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.neuron.Neuron.calculate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates neuron&#8217;s output.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.neuron.Neuron.error">
+<code class="descname">error</code><a class="headerlink" href="#ubrain.neuron.Neuron.error" title="Permalink to this definition">¶</a></dt>
+<dd><p>The error for this neuron. The error rate is typically the proportion of deviation from the expected
+value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the error for this neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Setter:</th><td class="field-body">Sets the error for this neuron.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.neuron.Neuron.input_conn">
+<code class="descname">input_conn</code><a class="headerlink" href="#ubrain.neuron.Neuron.input_conn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set of input connections fot his neuron.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns a set (copy) of input connections for this neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">{ubrain.connection.Connection}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.neuron.Neuron.input_func">
+<code class="descname">input_func</code><a class="headerlink" href="#ubrain.neuron.Neuron.input_func" title="Permalink to this definition">¶</a></dt>
+<dd><p>The input function for this neuron.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the input function for this neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Setter:</th><td class="field-body">Sets the input function for this neuron.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">ubrain.input.inputfunc.InputFunc</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.neuron.Neuron.label">
+<code class="descname">label</code><a class="headerlink" href="#ubrain.neuron.Neuron.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>The label for this neuron. A label is used to identify neurons on a form-to provide a description.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the label for this neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Setter:</th><td class="field-body">Sets the label for this neuron.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.neuron.Neuron.output">
+<code class="descname">output</code><a class="headerlink" href="#ubrain.neuron.Neuron.output" title="Permalink to this definition">¶</a></dt>
+<dd><p>The last value calculated for this neuron.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the last value calculated for this neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.neuron.Neuron.output_conn">
+<code class="descname">output_conn</code><a class="headerlink" href="#ubrain.neuron.Neuron.output_conn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set of output connections fot his neuron.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns a set (copy) of output connections form this neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">{ubrain.connection.Connection}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.neuron.Neuron.transfer_func">
+<code class="descname">transfer_func</code><a class="headerlink" href="#ubrain.neuron.Neuron.transfer_func" title="Permalink to this definition">¶</a></dt>
+<dd><p>The transfer function for this neuron.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Getter:</th><td class="field-body">Returns the transfer function for this neuron.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Setter:</th><td class="field-body">Sets the transfer function for this neuron.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">ubrain.trans.transferfunc.TransferFunc.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ubrain.weight">
+<span id="ubrain-weight-module"></span><h2>ubrain.weight module<a class="headerlink" href="#module-ubrain.weight" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ubrain.weight.Weight">
+<em class="property">class </em><code class="descclassname">ubrain.weight.</code><code class="descname">Weight</code><span class="sig-paren">(</span><em>value=0.0</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.weight.Weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Neuron connection weight entity.</p>
+<dl class="method">
+<dt id="ubrain.weight.Weight.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>value=0.0</em><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.weight.Weight.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an instance of a weight connection with the specified value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> &#8211; The weight value in range [0, 1]. Default: 0.0.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.weight.Weight.previous_value">
+<code class="descname">previous_value</code><a class="headerlink" href="#ubrain.weight.Weight.previous_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the previous weight value.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ubrain.weight.Weight.randomize">
+<code class="descname">randomize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ubrain.weight.Weight.randomize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets random weight value in range [0, 1].</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ubrain.weight.Weight.value">
+<code class="descname">value</code><a class="headerlink" href="#ubrain.weight.Weight.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the current weight value.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ubrain">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ubrain" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, José Luis Luri.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

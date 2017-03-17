@@ -1,0 +1,18 @@
+.wy-side-nav-search {
+  background-color: #ededed;
+}
+
+.wy-side-nav-search>a,
+.wy-side-nav-search
+.wy-dropdown>a {
+  color: #3b332f;
+}
+
+.wy-side-nav-search input[type=text] {
+  border-color: #3b332f;
+}
+
+.wy-menu-vertical a:active {
+  background-color: #e89a49;
+  color: #3b332f;
+}
