@@ -21,7 +21,7 @@ $ git clone git://github.com/joseluisluri/ubrain/ubrain.git
 $ python setup.py install
 ```
 
-# Documentation
+## Documentation
 
 **API and examples:** [https://joseluisluri.github.io/ubrain](http://joseluisluri.github.io/ubrain)
 
